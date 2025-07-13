@@ -36,6 +36,8 @@ li {
     border-radius: 50%;
 }
 
+
+
 /*NAV*/
 nav {
     height: 100px;
@@ -80,6 +82,116 @@ nav {
     margin: 0 12px;
     font-weight: bold;
 }
+
+/*Available Knives*/
+#available {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.available__info {
+    isplay: flex;
+    flex-direction: column;
+}
+
+
+.available__info--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.about-me__info--title {
+    margin-bottom: 20px;
+    animation: fade-up 650ms 400ms backwards;
+}
+
+
+.available__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+    animation: fade-up 650ms 600ms backwards;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.available--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/*Events*/
+#events {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.events__info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.events__info--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.events__info--title {
+    margin-bottom: 20px;
+    animation: fade-up 650ms 400ms backwards;
+}
+
+
+.events__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+    animation: fade-up 650ms 600ms backwards;
+}
+
+
+.events--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 
 /* Footer */
 footer {
@@ -130,3 +242,4 @@ footer {
 transform: translateX(20px);
 opacity: 1;
 }
+
